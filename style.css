@@ -1,0 +1,68 @@
+/*CSS CONSTRUCTION*/
+body {background-color: white;}
+h1   {color: blue; font-family: Arial;}
+h2   {color: green;}
+h3   {color: purple; font-family: Courier; font-style: bold}
+h4   {color: pink; font-family: Trebuchet MS; font-style: italic;}
+h5   {color: magenta;}
+h6   {color: brown;}
+p    {color: red; font-family: Times New Roman;}
+img {
+     border-radius: 50%;
+     width: 200px;
+     height: 200px;
+    }
+
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #E61E2A;
+     color: #fff;
+     height: 50px;
+     padding: 0 20px;
+ }
+ 
+ .navbar ul {
+     display: flex;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .navbar li {
+     margin-right: 20px;
+     font-size: 18px;
+ }
+ 
+ .navbar a {
+     color: #fff;
+     text-decoration: none;
+ }
+ 
+ .mobile-nav-icon {
+     text-align: center;
+     width: 30px;
+     height: 30px;
+     padding: 5px;
+     font-size: 20px;
+     background-color: #E61E2A;
+     display: none;
+ }
+ 
+@media only screen and (max-width: 768px) {
+     img {
+          width: 50%;
+          height: 50%;
+     }
+
+     container {
+		flex-direction: column;
+        padding: 0px 30px;
+	}
+	
+	.product {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+}
